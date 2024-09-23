@@ -1,0 +1,38 @@
+How it works:
+
+
+UI inputs to the service:
+
+length
+Master Password
+Passphrase
+
+Encryption:
+I) Input MP is same as test-pwd
+II) passphrase is the same as textToEncrypt
+III) IVParameter spec is one of 2 hardcoded values
+
+1) Add hardcoded salt to master password to make secret key
+2) call encrypt(passphrase, secret key, hardcoded IVParameterspec)
+3) Cut the return value using the length from the UI
+
+
+
+Resources:
+
+Form dropdown selection options:
+https://www.geeksforgeeks.org/how-to-set-selected-option-of-a-select-in-react/
+
+Responsive JSX:
+https://github.com/acidb/mobiscroll-demos-react/blob/main/src/demos/form-components/forms/responsive/responsive.jsx
+
+Making API calls in React:
+https://builtin.com/software-engineering-perspectives/react-api
+
+Using Axios with React to make GET, POST, DELETE API Requests:
+https://codedamn.com/news/reactjs/axios-network-requests
+
+Password strength tester:
+https://www.passwordmonster.com/
+
+Next steps would be to: 
